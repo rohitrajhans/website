@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>BITS-ACM</title>
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="js/main.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
 </head>
 
 <body>
@@ -50,13 +51,22 @@
 
             <div class="carousel-inner">
                 <div class="item active">
-                    <div class="carousel-1">SOME ANIMATION</div>
+                    <div class="carousel-1">
+                        <div><h1 class="carousel-title" id="carousel-title"> BITS-ACM</h1></div>
+                        <div class="carousel-anim-container">
+                            <div class="anim-text"></div>
+                        </div>
+                    </div>
                 </div>
                 <div class="item">
-                    <div class="carousel-2">EVENT 1</div>
+                    <div class="carousel-2"> <h1 class="carousel-title" id="carousel2-title"> MACHINE LEARNING SIG </h1>
+                        <button class="learn-more-btn btn bg-primary"> <a href="">Learn More</a></button>
+                    </div>
                 </div>
                 <div class="item">
-                    <div class="carousel-3">EVENT 2</div>
+                    <div class="carousel-3"><h1 class="carousel-title" id="carousel3-title"> CHECKMATE </h1>
+                        <button class="learn-more-btn btn bg-primary"> <a href="">Learn More</a></button>
+                    </div>
                 </div>
             </div>
 
@@ -82,85 +92,56 @@
 
         <div id="mobile-carousel">
             <div class="mobile-container" id="mob-carousel-1">
-                EVENT 1
+                <div><h1 id="carousel-title"> BITS-ACM</h1></div>
+                <div class="carousel-anim-container">
+                    <div class="anim-text"></div>
+                </div>
             </div>
             <div class="mobile-container" id="mob-carousel-2">
-                EVENT 2
+                <h1 class="carousel-title" id="carousel2-title"> MACHINE LEARNING SIG </h1>
+                <button class="learn-more-btn btn bg-primary"> <a href="">Learn More</a></button>
+            </div>
+            <div class="mobile-container" id="mob-carousel-3">
+                <h1 class="carousel-title" id="carousel3-title"> CHECKMATE </h1>
+                <button class="learn-more-btn btn bg-primary"> <a href="">Learn More</a></button>
             </div>
         </div>
 
         <div class="section" id="about">
             <div class="show-on-mobile section-title"><span>About</span></div>
-            <div class="row">
-                <div class="col-sm-12 col-lg-8">We are the Association for Computing Machinery (ACM), Student Chapter,
+            <div class="section-row">
+                <div class="section-image"><img src="media/about_head.png" alt=""></div>
+                <div class="container">We are the Association for Computing Machinery (ACM), Student Chapter,
                     Birla Institute of Technology and Science, Pilani or in short, BITS-ACM . The student chapter in
                     BITS Pilani was established in 2008, but in eight years, we have grown into the largest student
                     chapter in the world with over 800 Chapter Members and 50 Council members. Both groups consist of
                     students from all subjects and of all years – freshmen to seniors.</div>
-                <div class="col-lg-4 section-image"><img src="media/about_head.png" alt=""></div>
             </div>
         </div>
 
         <div class="section" id="events">
             <div class="show-on-mobile section-title"><span>Events</span></div>
-            <div class="row">
-                <div class="col-lg-4 section-image"><img src="media/events_head.png" alt=""></div>
-                <div class="col-sm-12 col-lg-8">
-                    <div class="events-container">
-                        <a href="#">
-                            <div id="event-1" class="event-container card">
-                                <img class="card-img-top event-img" src="media/acm_logo-18.png" alt="">
-                                <div class="card-body event-body">
-                                    <h5 class="card-title">Checkmate</h5>
-                                    <p class="card-text">Details about the event</p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div id="event-2" class="event-container card">
-                                <img class="card-img-top event-img" src="media/acm_logo-18.png" alt="">
-                                <div class="card-body event-body">
-                                    <h5 class="card-title">Checkmate</h5>
-                                    <p class="card-text">Details about the event</p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div id="event-3" class="event-container card">
-                                <img class="card-img-top event-img" src="media/acm_logo-18.png" alt="">
-                                <div class="card-body event-body">
-                                    <h5 class="card-title">Checkmate</h5>
-                                    <p class="card-text">Details about the event</p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div id="event-4" class="event-container card">
-                                <img class="card-img-top event-img" src="media/acm_logo-18.png" alt="">
-                                <div class="card-body event-body">
-                                    <h5 class="card-title">Checkmate</h5>
-                                    <p class="card-text">Details about the event</p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div id="event-5" class="event-container card">
-                                <img class="card-img-top event-img" src="media/acm_logo-18.png" alt="">
-                                <div class="card-body event-body">
-                                    <h5 class="card-title">Checkmate</h5>
-                                    <p class="card-text">Details about the event</p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div id="event-6" class="event-container card">
-                                <img class="card-img-top event-img" src="media/acm_logo-18.png" alt="">
-                                <div class="card-body event-body">
-                                    <h5 class="card-title">Checkmate</h5>
-                                    <p class="card-text">Details about the event</p>
-                                </div>
-                            </div>
-                        </a>
+            <div class="section-row">
+                <div class="section-image"><img src="media/events_head.png" alt=""></div>
+                <div class="events-container">
+                    <div class="event-container">
+                        <div class="event-title"> <span> Title </span></div>
+                        <div class="event-body">
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            </p>
+                        </div>
+                        <div class="event-footer"><a href="#">Read More</a></div>
+                    </div>
+                    <hr class="show-on-mobile">
+                    <div class="event-container">
+                        <div class="event-title"> <span> Title </span></div>
+                        <div class="event-body">
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            </p>
+                        </div>
+                        <div class="event-footer"><a href="#">Read More</a></div>
                     </div>
                 </div>
             </div>
@@ -168,29 +149,116 @@
 
         <div class="section" id="postholders">
             <div class="show-on-mobile section-title"><span>Postholders</span></div>
-            <div class="row">
-                <div class="col-sm-12 col-lg-8">
+            <div class="section-row">
+                <div class="section-image"><img src="media/posthold_head.png" alt=""></div>
+                <div class="">
                     <div class="postholders-container">
-                        <div id="postholder-1" class="postholder-container"></div>
-                        <div id="postholder-2" class="postholder-container"></div>
-                        <div id="postholder-3" class="postholder-container"></div>
-                        <div id="postholder-4" class="postholder-container"></div>
-                        <div id="postholder-5" class="postholder-container"></div>
-                        <div id="postholder-6" class="postholder-container"></div>
-                        <div id="postholder-7" class="postholder-container"></div>
-                        <div id="postholder-8" class="postholder-container"></div>
-                        <div id="postholder-9" class="postholder-container"></div>
-                        <div id="postholder-10" class="postholder-container"></div>
-                        <div id="postholder-11" class="postholder-container"></div>
-                        <div id="postholder-12" class="postholder-container"></div>
+                        <div id="postholder-1" class="postholder-container">
+                            <img src="./media/user-image-.png" alt="no image" class="postholder-img-container">
+                            <div class="img-caption">
+                                Chair
+                            </div>
+                        </div>
+                        <div id="postholder-2" class="postholder-container">
+                            <img src="./media/user-image-.png" alt="no image" class="postholder-img-container">
+                            <div class="img-caption">
+                                Chair
+                            </div>
+                        </div>
+                        <div id="postholder-3" class="postholder-container">
+                            <img src="./media/user-image-.png" alt="no image" class="postholder-img-container">
+                            <div class="img-caption">
+                                Vice CHair
+                            </div>
+                        </div>
+                        <div id="postholder-4" class="postholder-container">
+                            <img src="./media/user-image-.png" alt="no image" class="postholder-img-container">
+                            <div class="img-caption">
+                                Treasurer
+                            </div>
+                        </div>
+                        <div id="postholder-5" class="postholder-container">
+                            <img src="./media/user-image-.png" alt="no image" class="postholder-img-container">
+                            <div class="img-caption">
+                                Secretary
+                            </div>
+                        </div>
+                        <div id="postholder-6" class="postholder-container">
+                            <img src="./media/user-image-.png" alt="no image" class="postholder-img-container">
+                            <div class="img-caption">
+                                Membership
+                            </div>
+                        </div>
+                        <div id="postholder-7" class="postholder-container">
+                            <img src="./media/user-image-.png" alt="no image" class="postholder-img-container">
+                            <div class="img-caption">
+                                Publicity
+                            </div>
+                        </div>
+                        <div id="postholder-8" class="postholder-container">
+                            <img src="./media/user-image-.png" alt="no image" class="postholder-img-container">
+                            <div class="img-caption">
+                                Outreach
+                            </div>
+                        </div>
+                        <div id="postholder-9" class="postholder-container">
+                            <img src="./media/user-image-.png" alt="no image" class="postholder-img-container">
+                            <div class="img-caption">
+                                Machine Learning
+                            </div>
+                        </div>
+                        <div id="postholder-10" class="postholder-container">
+                            <img src="./media/user-image-.png" alt="no image" class="postholder-img-container">
+                            <div class="img-caption">
+                                Competitive Coding
+                            </div>
+                        </div>
+                        <div id="postholder-11" class="postholder-container">
+                            <img src="./media/user-image-.png" alt="no image" class="postholder-img-container">
+                            <div class="img-caption">
+                                WebD
+                            </div>
+                        </div>
+                        <div id="postholder-12" class="postholder-container">
+                            <img src="./media/user-image-.png" alt="no image" class="postholder-img-container">
+                            <div class="img-caption">
+                                Webmaster
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 section-image"><img src="media/posthold_head.png" alt=""></div>
             </div>
         </div>
 
-        <div class="" style="font-size: 30px; text-align:center; padding: 20px;">
-            Contact section
+        <div class="contact-section">
+            <div class="about-footer">
+                <div class="about-footer-title">
+                    <h4>BITS-ACM</h4>
+                    <hr>
+                    <p>This year, along with the entry of 30 new Council Members, we are projecting an increase of about 300 Chapter Members after the new recruitment session, to be held shortly.</p>
+                </div>
+            </div>
+            <div class="follow-us">
+                <h4> Follow us on </h4>
+                <hr>
+                <ul>
+                    <li><a href="https://www.facebook.com/bitsacm/"> <img src="./media/facebook.png" alt="facebook"></a></li>
+                    <li><a href="https://twitter.com/bitsacm"> <img src="./media/twitter.png" alt="twitter"></a></li>
+                    <li><a href="https://bitsacm.github.io/"> <img src="./media/blogger.png" alt="blog"></a></li>
+                </ul>
+                <hr>
+            </div>
+            <div class="contact-us">
+                <div>
+                    <h4> Where to find us </h4>
+                    <p><img src="./media/blue-location.png" height="16px" width="16px" alt=""> BITS Pilani, Vidyavihar Campus, Pilani, Rajasthan, 333031 </p>
+                    <hr>
+                </div>
+                <div>
+                    <h4> Email us at </h4>
+                    <p> <img src="./media/gmail-logo.png" alt=""> bitsacm.acm@gmail.com </p>
+                </div>
+            </div>
         </div>
 
     </div>

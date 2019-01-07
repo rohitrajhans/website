@@ -1,9 +1,51 @@
-window.onload = () => {
-    const phrases = [
-        '#Bit_by_Bit',
-        'Building the future'
-    ]
-    const el = document.querySelector('.anim-text');
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Testing</title>
+    <style>
+        @import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100';
+
+        html,
+        body {
+            font-family: 'Roboto Mono', monospace;
+            background: #212121;
+            height: 100%;
+        }
+
+        .carousel-anim-container {
+            height: 100%;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        .text {
+            font-weight: 100;
+            font-size: 28px;
+            color: #fafafa;
+        }
+
+        .dud {
+            color: #757575;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="anim-text"></div>
+    </div>
+</body>
+<script>
+    // ——————————————————————————————————————————————————
+    // TextScramble
+    // ——————————————————————————————————————————————————
+
     class TextScramble {
         constructor(el) {
             this.el = el
@@ -69,7 +111,19 @@ window.onload = () => {
         }
     }
 
+    // ——————————————————————————————————————————————————
+    // Example
+    // ——————————————————————————————————————————————————
+
+    const phrases = [
+        'BITS-ACM',
+        '#Bit_by_Bit',
+        'Building the future'
+    ]
+
+    const el = document.querySelector('.anim-text')
     const fx = new TextScramble(el)
+
     let counter = 0
     const next = () => {
         fx.setText(phrases[counter]).then(() => {
@@ -78,6 +132,7 @@ window.onload = () => {
         counter = (counter + 1) % phrases.length
     }
 
-    next();
+    next()
+</script>
 
-};
+</html>
