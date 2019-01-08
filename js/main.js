@@ -4,6 +4,7 @@ window.onload = () => {
         'Building the future'
     ]
     const el = document.querySelector('.anim-text');
+    const elMob = document.querySelector('.anim-text-mob');
     class TextScramble {
         constructor(el) {
             this.el = el
@@ -70,9 +71,13 @@ window.onload = () => {
     }
 
     const fx = new TextScramble(el)
+    const fxMob = new TextScramble(elMob)
     let counter = 0
     const next = () => {
         fx.setText(phrases[counter]).then(() => {
+            setTimeout(next, 800)
+        })
+        fxMob.setText(phrases[counter]).then(() => {
             setTimeout(next, 800)
         })
         counter = (counter + 1) % phrases.length
