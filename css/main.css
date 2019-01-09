@@ -296,7 +296,7 @@ body {
 }
 
 #about, #achievements {
-    background: url('../media/bg3.png');
+    background: url('../media/bg3.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 92vh;
